@@ -30,6 +30,7 @@ func NewUserHandler() *userHandler {
 
 func (h *userHandler) Register(router fiber.Router) {
 	router.Post("/users", h.createUser)
+	router.Get("/users", h.createUser)
 }
 
 func (h *userHandler) createUser(c *fiber.Ctx) error {

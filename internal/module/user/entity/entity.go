@@ -10,5 +10,10 @@ type CreateUserResponse struct {
 	Id string `json:"id"`
 }
 
+type GetUserResponse struct {
+	Id string `json:"id`
+	Name string `json:"name`
+}
+
 type XxxResult struct {
 }
